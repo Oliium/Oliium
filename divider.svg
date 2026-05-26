@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 44" width="1100" height="44" role="img" aria-label="divider">
+  <defs>
+    <linearGradient id="dL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#37e0ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#37e0ff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#37e0ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="dR" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8a2cff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#8a2cff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#8a2cff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="g" x="-60%" y="-300%" width="220%" height="700%"><feGaussianBlur stdDeviation="2"/></filter>
+  </defs>
+  <rect x="60"  y="21" width="430" height="2" fill="url(#dL)" filter="url(#g)"/>
+  <rect x="610" y="21" width="430" height="2" fill="url(#dR)" filter="url(#g)"/>
+  <g transform="translate(550,22)">
+    <g fill="#9aa6ff" font-family="serif" font-size="16" text-anchor="middle">
+      <text x="-44" y="5">⟨</text><text x="44" y="5">⟩</text>
+    </g>
+    <g filter="url(#g)">
+      <path d="M0 -13 L13 0 L0 13 L-13 0 Z" fill="none" stroke="#37e0ff" stroke-width="1.6"/>
+      <path d="M0 -7 L7 0 L0 7 L-7 0 Z" fill="#8a2cff"/>
+    </g>
+    <circle cx="0" cy="0" r="2" fill="#cdeeff"/>
+  </g>
+</svg>

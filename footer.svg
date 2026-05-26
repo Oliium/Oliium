@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200" role="img" aria-label="Arise — Shadow Army">
+  <defs>
+    <linearGradient id="fbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0f24"/><stop offset="100%" stop-color="#03040c"/>
+    </linearGradient>
+    <linearGradient id="ariseGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5fe9ff"/><stop offset="55%" stop-color="#7aa0ff"/><stop offset="100%" stop-color="#b06bff"/>
+    </linearGradient>
+    <radialGradient id="fglow" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#8a2cff" stop-opacity="0.4"/><stop offset="100%" stop-color="#8a2cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ffloor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#03040c" stop-opacity="0"/><stop offset="100%" stop-color="#03040c"/>
+    </linearGradient>
+    <filter id="fneon" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="fsoft" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="2.2"/></filter>
+    <g id="fsld">
+      <path d="M-15 0 L-15 -48 Q-15 -78 0 -78 Q15 -78 15 -48 L15 0 Z" fill="#04050d" stroke="#6a3cff" stroke-opacity="0.5" stroke-width="1.2"/>
+      <circle cx="-5" cy="-54" r="2.2" fill="#7fe9ff" filter="url(#fsoft)"/>
+      <circle cx="5"  cy="-54" r="2.2" fill="#7fe9ff" filter="url(#fsoft)"/>
+    </g>
+  </defs>
+
+  <rect width="1200" height="200" fill="url(#fbg)"/>
+  <ellipse cx="600" cy="70" rx="520" ry="150" fill="url(#fglow)"/>
+
+  <!-- armée d'ombres en rang -->
+  <g>
+    <use href="#fsld" transform="translate(70,196) scale(0.85)"/>
+    <use href="#fsld" transform="translate(140,200) scale(1.0)"/>
+    <use href="#fsld" transform="translate(225,198) scale(0.78)"/>
+    <use href="#fsld" transform="translate(300,200) scale(0.95)"/>
+    <use href="#fsld" transform="translate(385,196) scale(0.82)"/>
+    <use href="#fsld" transform="translate(905,196) scale(0.82)"/>
+    <use href="#fsld" transform="translate(985,200) scale(1.0)"/>
+    <use href="#fsld" transform="translate(1065,198) scale(0.8)"/>
+    <use href="#fsld" transform="translate(1135,200) scale(0.92)"/>
+  </g>
+
+  <rect x="0" y="150" width="1200" height="50" fill="url(#ffloor)"/>
+
+  <text x="600" y="108" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="66" font-weight="800" letter-spacing="14" fill="url(#ariseGrad)" filter="url(#fneon)">ARISE</text>
+  <text x="600" y="140" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" letter-spacing="3" fill="#5fd0ff" fill-opacity="0.8">[ THE SHADOWS NEVER SLEEP ]</text>
+</svg>
